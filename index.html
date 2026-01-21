@@ -1,24 +1,210 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
-
-<!--
-WRITTEN BY: Your name here
-EMAIL: Your email here
--->
-
 <head>
   <meta charset="utf-8">
-  <meta name="author" content="Your name here">
-  <meta name="description" content="description of your page">
-   <!-- you would link to an external stylesheet here! -->
-   <!-- you would also link to Bootstrap here! -->
-  <title>title here</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Jiacheng He">
+  <meta name="description" content="Portfolio for Jiacheng He (Jason), a Computer Science student focused on software development and data analysis.">
+  <title>Jiacheng He | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Spectral:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <p>
-    <a href="http://validator.w3.org/check?uri=referer">
-       W3C validator
-    </a>
-  </p>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="index.html">Jiacheng He</a>
+        <span class="brand-tag">Computer Science &amp; Business Information Management</span>
+      </div>
+      <nav aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero reveal delay-1">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Nice to meet you</p>
+          <h1>Hi, I'm Jason. I build software that turns data into clear decisions.</h1>
+          <p class="lead">
+            I am Jiacheng He (Jason), a Computer Science student focused on software development,
+            data analysis, quantified metrics, and business operations.
+            When I'm not coding, I'm playing basketball or lifting weights.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="projects.html">See projects</a>
+            <a class="button ghost" href="#contact">Contact me</a>
+          </div>
+          <div class="social-list">
+            <a class="social-link" href="https://www.linkedin.com/in/jiacheng-he/">
+              <span class="icon fa-brands fa-linkedin" aria-hidden="true"></span>
+              <span>LinkedIn</span>
+            </a>
+            <a class="social-link" href="mailto:jasonho021105@gmail.com">
+              <span class="icon fa-solid fa-envelope" aria-hidden="true"></span>
+              <span>Email</span>
+            </a>
+          </div>
+        </div>
+        <figure class="hero-portrait">
+          <img src="images/profile.jpg" alt="Portrait photo of Jiacheng He">
+          <figcaption>Based in Irvine, CA. Computer Science student, graduating 2026.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section reveal delay-2" id="about">
+      <div class="container split">
+        <div>
+          <h2 class="section-title"><span aria-hidden="true"></span>About</h2>
+          <p>
+            I like projects that connect software engineering with real-world decisions.
+            It is fun to turn messy data into clear insights and build interfaces that make
+            the next step obvious.
+          </p>
+          <p>
+            Right now I am exploring data-backed product thinking, responsive web development,
+            and tools that help teams act quickly on metrics.
+          </p>
+        </div>
+        <aside class="facts">
+          <h3>Quick facts</h3>
+          <ul>
+            <li><span class="icon fa-solid fa-location-dot" aria-hidden="true"></span>Irvine, CA</li>
+            <li><span class="icon fa-solid fa-graduation-cap" aria-hidden="true"></span>Computer Science &amp; Business Information Management, graduating 2026</li>
+            <li><span class="icon fa-solid fa-briefcase" aria-hidden="true"></span>Interests: software development, data analysis, business operations</li>
+            <li><span class="icon fa-solid fa-headphones" aria-hidden="true"></span>Hobbies: basketball, weight lifting</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section reveal delay-3" id="projects">
+      <div class="container">
+        <h2 class="section-title"><span aria-hidden="true"></span>Selected projects</h2>
+        <p class="lead">A quick snapshot of recent coursework and personal builds.</p>
+        <div class="card-grid">
+          <article class="card">
+            <img src="images/project-1.jpg" alt="Screenshot of the Basketball Practice Stats Analyzer web app">
+            <div>
+              <h3>Basketball Practice Stats Analyzer</h3>
+              <p>
+                A web app that tracks basketball practice performance and highlights trends
+                through simple, readable metrics.
+              </p>
+            </div>
+            <ul class="tag-list">
+              <li class="tag">Data analysis</li>
+              <li class="tag">Metrics</li>
+              <li class="tag">Web app</li>
+            </ul>
+            <a href="projects.html#project-one">View details</a>
+          </article>
+          <article class="card">
+            <img src="images/project-2.jpg" alt="Screenshot of the Stock Trend Tracker web app">
+            <div>
+              <h3>Stock Trend Tracker</h3>
+              <p>
+                A tracker that checks whether a stock symbol is in an uptrend and
+                summarizes the result with clear signals.
+              </p>
+            </div>
+            <ul class="tag-list">
+              <li class="tag">Trend analysis</li>
+              <li class="tag">Symbol lookup</li>
+              <li class="tag">Web app</li>
+            </ul>
+            <a href="projects.html#project-two">View details</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal delay-4" id="skills">
+      <div class="container">
+        <h2 class="section-title"><span aria-hidden="true"></span>Toolbox</h2>
+        <p class="lead">Skills I use in class projects, data explorations, and team collaborations.</p>
+        <div class="skills-list">
+          <div class="skill">
+            <h3>Software development</h3>
+            <p>Semantic HTML, CSS, and building clean, responsive front-end interfaces.</p>
+          </div>
+          <div class="skill">
+            <h3>Data analysis</h3>
+            <p>Quantified metrics, dashboard thinking, and summarizing insights.</p>
+          </div>
+          <div class="skill">
+            <h3>Business operations</h3>
+            <p>Process awareness, KPI tracking, and translating goals into metrics.</p>
+          </div>
+          <div class="skill">
+            <h3>Collaboration</h3>
+            <p>Documentation, stakeholder communication, and iterative feedback.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal delay-4" id="contact">
+      <div class="container">
+        <div class="contact">
+          <h2 class="section-title"><span aria-hidden="true"></span>Contact</h2>
+          <p class="lead">Let me know if you want to collaborate, chat about UX, or review my work.</p>
+          <div class="split">
+            <div>
+              <p>
+                Email me at <a href="mailto:jasonho021105@gmail.com">jasonho021105@gmail.com</a> or use the form.
+                I usually respond within 1-2 days.
+              </p>
+              <ul class="tag-list">
+                <li class="tag">Open to internships</li>
+                <li class="tag">Software development</li>
+                <li class="tag">Data analysis</li>
+              </ul>
+            </div>
+            <form class="contact-form" action="#" method="post">
+              <div class="form-row">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-row">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-row">
+                <label for="topic">Topic</label>
+                <input type="text" id="topic" name="topic" placeholder="Internship, project, feedback">
+              </div>
+              <div class="form-row">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <button class="button" type="submit">Send message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>Designed and built by Jiacheng He (Jason) for INF 133.</p>
+      <div class="footer-links">
+        <a href="projects.html">Projects</a>
+        <a href="https://www.linkedin.com/in/jiacheng-he/">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
